@@ -62,7 +62,6 @@ def add_comment_to_post(request, pk):
     else:
         form = CommentForm()
     return render(request, 'blog/add_comment_to_post.html', {'form': form})
-
     
 def post_remove(request, pk):
     post = get_object_or_404(Post, pk=pk)
